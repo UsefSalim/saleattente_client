@@ -18,4 +18,10 @@ export function requestLogin(action) {
     },
   });
 }
+export function requestLogout() {
+  return axios.request({
+    method: 'post',
+    url: `${URL}/auth/logout`,
+  });
+}
 

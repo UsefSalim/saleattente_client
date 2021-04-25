@@ -1,9 +1,10 @@
 import React from 'react';
+import NavBar from '../../components/utils/NavBar';
 
 const AdminProfile = () => (
-  <div>
-    AdminProfile
-  </div>
+  <>
+    <NavBar />
+  </>
 );
 
 export default AdminProfile;

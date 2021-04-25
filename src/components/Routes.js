@@ -13,7 +13,7 @@ const Routes = () => {
   return (
     <Switch>
       <ProtectedAuthRoute exact path="/" auth={isAuthenticated} role={role} component={Home} />
-      <ProtectedAuthRoute exact auth={isAuthenticated} role={role} path="/login" component={Login} />
+      <ProtectedAuthRoute auth={isAuthenticated} role={role} path="/login" component={Login} />
       <ProtectedUserRoute auth={isAuthenticated} role={role} path="/dashboard/user" component={UserProfile} />
       <ProtectedAdminRoute auth={isAuthenticated} role={role} path="/dashboard/admin" component={AdminProfile} />
     </Switch>
